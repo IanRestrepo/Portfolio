@@ -198,3 +198,35 @@ a{
     bottom: -80px;
     align-items: center;
 }
+
+.SkillCard img{
+    width: 90px;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+.SkillCard{
+    width: 160px;
+    height: 160px;
+    background: rgb(15, 15, 15);
+    margin-bottom: 15px;
+    margin-left: 50px;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.SkillCard h3{
+    margin: 0%;
+    padding-top: 5px;
+    padding-left: 17px;
+}
+
+#HTML img{
+    width: 70px;
+}
+
+#CSS3 img{
+    width: 70px;
+}
