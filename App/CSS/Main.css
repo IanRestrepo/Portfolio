@@ -3,7 +3,7 @@
 body{
     margin:0px;
     padding: 0px;
-    font-family: poppins;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #111111;
 }
 *{
@@ -170,63 +170,234 @@ a{
     100%   { transform: translate(5px, -0px); }
 }   
 
-/*--------------------Skills--------------------------*/
+/*--------------------Card's--------------------------*/
+.TitleSec{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family:monospace;
+}
 
-#skills{
+.container__card{
+    max-width: 1200px;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    position: relative;
+    margin: 20px;
+    font-family:  Arial, sans-serif;
+    transition: all 300ms;
+    border-radius: 20px;
+}
+
+.card:hover .icon{
+    margin-top: -110px;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+    border-radius:  20px 20px  0px 0px;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 20px -10px #0084ff;
+}
+
+.card:hover .info__description{
+    margin-top: 0;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.icon{
     width: 100%;
+    height: 220px;
+    background: #1b1c1d;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+        transition: all 400ms cubic-bezier(0.5,0,0,1);
+}
+
+.icon i{
+    font-size: 150px;
+    color: white;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+}
+
+.info__description{
+    width: 100%;
+    height: 220px;
+    color: rgb(219, 217, 217);
+    background: #1b1c1d;
+    padding: 20px;
+    margin-top: -220px;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+    border-radius: 20px;
+}
+
+.info__description p{
+    font-size: 14px;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+}
+
+.info__description input{
+    margin-top: 20px;
+    padding: 10px 40px;
+    background-color: #0084ff;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #0056a7;
+    transition: box-shadow 300ms;
+    margin-left: 50px;
+}
+
+.info__description input:hover{
+    box-shadow: 1px 1px 30px -5px #0184ff;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+}
+
+/*-------------Card's Color----------*/
+
+.c1:hover .icon{
+    background-color: #DD4B25;
+}
+
+.c1 .icon i{
+    color: #DD4B25;
+}
+
+.c1:hover .icon i{
+    color: #fff;
+}
+
+.c2:hover .icon{
+    background-color: #146EB0;
+}
+
+.c2 .icon i{
+    color: #146EB0;
+}
+
+.c2:hover .icon i{
+    color: #fff;
+}
+
+.c3:hover .icon{
+    background-color: #ffd332;
+}
+
+.c3 .icon i{
+    color: #ffd332;
+}
+
+.c3:hover .icon i{
+    color: #fff;
+}
+
+.c4:hover .icon{
+    background-color: #0095ff;
+}
+
+.c4 .icon i{
+    color: #0095ff;
+}
+
+.c4:hover .icon i{
+    color: #fff;
+}
+
+.c5:hover .icon{
+    background-color: #000000;
+}
+
+.c5 .icon i{
+    color: #000000;
+}
+
+.c5:hover .icon i{
+    color: #fff;
+}
+
+.c6:hover .icon{
+    background-color: #ff3300;
+}
+
+.c6 .icon i{
+    color: #ff3300;
+}
+
+.c6:hover .icon i{
+    color: #fff;
+}
+
+.c7:hover .icon{
+    background-color: #02007e;
+}
+
+.c7 .icon i{
+    color: #02007e;
+}
+
+.c7:hover .icon i{
+    color: #fff;
+}
+
+/*---------------Footer----------*/
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #070707;
+
+}
+
+footer p{
+    margin-left: 490px;
     color: white;
 }
 
-#skills h2{
-    font-size: 30px;
-    text-align: center;
-}
-
-#title{
-    width: 100%;
-    height: 1px;
-    border-bottom: 15px;
-    border-color: #0056a7;
-}
-
-.sepa{
-    width: 115px;
-    height: 5px;
-    background: #00AEFF;
-    position: absolute;
-    right: 619px;
-    bottom: -80px;
+#NameAndInfo{
+    color: white;
+    width: 1285px;
+    height: 250px;
+    padding-left: 50px;
+    justify-content: center;
     align-items: center;
 }
 
-.SkillCard img{
-    width: 90px;
-    padding-top: 30px;
-    padding-left: 15px;
+#NameAndInfo h2{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
 }
 
-.SkillCard{
-    width: 160px;
-    height: 160px;
-    background: rgb(15, 15, 15);
-    margin-bottom: 15px;
-    margin-left: 50px;
-    border-radius: 15px;
+#NameAndInfo em{
+   margin-left: 380px;
+}
+
+#Fto{
     align-items: center;
-    text-align: center;
-    padding-right: 15px;
-}
-
-.SkillCard h3{
-    margin: 0%;
-    padding-top: 5px;
-    padding-left: 17px;
-}
-
-#HTML img{
-    width: 70px;
-}
-
-#CSS3 img{
-    width: 70px;
+    padding-top: 50px;
 }
